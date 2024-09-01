@@ -1,0 +1,49 @@
+.box-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .login-card {
+        background-color: rgba(0,0,0,0);
+        box-shadow: none;
+
+        p {
+            text-align: center;
+            color: black;
+        }
+    }
+
+    .login-card h1 {
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    .input-container input {
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0);
+        border: 0;
+        border: 1px solid black;
+        padding: 10px 20px;
+        width: 100%;
+        margin-bottom: 10px;
+        outline: 0;
+        color: black;
+        font-family: cursive;
+    }
+
+    .input-container input::placeholder {
+        color: rgba(0, 0, 0, 0.61);
+        font-family: cursive;
+    }
+
+    .fab-container {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        margin-top: 10px;
+      }
+}

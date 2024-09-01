@@ -1,0 +1,25 @@
+<ion-content>
+  <body style="background-image: url('assets/fondos/background.png'); background-size: cover;">
+    <div class="box-centered">
+      <ion-card class="login-card">
+        <ion-card-header>
+          <h1><b>Te Llevo</b> APP</h1>
+          <p>Seguridad y eficiencia en <br>transporte al alcance de un toque</p>
+        </ion-card-header>
+        <ion-card-content [formGroup]="loginForm">
+          <div class="input-container">
+            <input formControlName="email" [(ngModel)]="emailValue" type="email" placeholder="Correo electrónico" class="custom-input"/>
+          </div>
+          <div class="input-container">
+            <input formControlName="pass" [(ngModel)]="passValue" type="password" placeholder="Contraseña" class="custom-input"/>
+          </div>
+          <div class="fab-container">
+            <ion-fab-button (click)="login()" color="dark">
+              <ion-icon name="arrow-forward"></ion-icon>
+            </ion-fab-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </body>
+</ion-content>
